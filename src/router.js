@@ -2,10 +2,10 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
 import main from './views/main.vue'
-import DoctorMenZhen from './views/DoctorMenZhen.vue'
-import DoctorYiJimanager from './views/DoctorYiJimanager.vue'
-import DoctorXiYao from './views/DoctorXiYao.vue'
-import DoctorZhongyao from './views/DoctorZhongyao.vue'
+import DoctorMenZhen from './views/Doctor/DoctorMenZhen.vue'
+import DoctorYiJimanager from './views/Doctor/DoctorYiJimanager.vue'
+import DoctorXiYao from './views/Doctor/DoctorXiYao.vue'
+import DoctorZhongyao from './views/Doctor/DoctorZhongyao.vue'
 Vue.use(Router)
 
 export default new Router({

@@ -11,7 +11,7 @@
         <!-- 内容区 -->
         <div class="app-wrap">
             <!-- 此处放置el-tabs代码 -->
-            <div >
+            <div style="box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1)">
               <el-tabs
                 v-model="activeIndex"
                 type="border-card"
@@ -27,11 +27,12 @@
                   :name="item.route"
                  >
                 </el-tab-pane>
+                  <div class="content-wrap">
+                      <router-view/>
+                  </div>
               </el-tabs>
             </div>
-            <div class="content-wrap">
-              <router-view/>
-            </div>
+
         </div>
       </el-col>
     </el-row>
@@ -149,13 +150,9 @@ export default {
   border: 1px solid #DCDFF7;
     border-top: none;
 }
-</style>
-<style>
 .el-tabs.el-tabs--border-card {
     box-shadow: none;
     border-bottom: none;
 }
-
 </style>
-
 
