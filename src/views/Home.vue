@@ -84,12 +84,12 @@ export default {
     // 当当前路由是首页时，添加首页到store，并设置激活状态
     if (this.$route.path !== '/' && this.$route.path !== '/main') {
       console.log('1');
-      this.$store.commit('add_tabs', {route: '/main' , name: 'main'});
+      this.$store.commit('add_tabs', {route: '/main' , name: '首页'});
       this.$store.commit('add_tabs', {route: this.$route.path , name: this.$route.name });
       this.$store.commit('set_active_index', this.$route.path);
     } else {
       console.log('2');
-      this.$store.commit('add_tabs', {route: '/main', name: 'main'});
+      this.$store.commit('add_tabs', {route: '/main', name: '首页'});
       this.$store.commit('set_active_index', '/main');
       this.$router.push('/');
     }
