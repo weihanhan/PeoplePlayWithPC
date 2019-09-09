@@ -1,11 +1,11 @@
 <template>
   <div class="home">
     <el-row>
-      <el-col :span="4">
+      <el-col :span="3">
         <!-- 左侧导航栏 -->
         <slider></slider>
       </el-col>
-      <el-col :span='20'>
+      <el-col :span='21'>
         <!-- header -->
         <nav-top></nav-top>
         <!-- 内容区 -->
@@ -27,7 +27,7 @@
                   :name="item.route"
                  >
                 </el-tab-pane>
-                  <div class="content-wrap">
+                  <div style="height: max-content">
                       <router-view/>
                   </div>
               </el-tabs>
@@ -144,7 +144,7 @@ export default {
   height:100vh;
 }
 .app-wrap{
-  padding: 20px;
+  padding: 0px;
 }
 .content-wrap{
   border: 1px solid #DCDFF7;
